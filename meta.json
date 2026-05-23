@@ -66,7 +66,7 @@
   "mechanic": "lane_fit",
   "input_style": "dimension_rows",
   "output_style": "fit_lanes",
-  "output_label": "ここを見ればOKです",
+  "output_label": "通れる発送レーンです",
   "audience_promise": "梱包前に送料事故を避けやすくなる。",
   "publish_hook": "品物、たたみ方、梱包材、厚み余白を入れると、収まる発送レーンと超過しそうな箇所が見える。",
   "engine": "brief_driven",

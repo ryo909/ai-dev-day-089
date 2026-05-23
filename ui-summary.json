@@ -1,11 +1,11 @@
 {
   "title": "フリマ発送厚みゲージ",
   "archetype": "lane_fit",
-  "interaction_model": "structured_multi_field",
-  "primary_layout": "two_column_workbench",
-  "result_presentation_style": "stacked_result_cards",
-  "palette_motif": "neutral slate / white",
-  "main_cta": "サンプルで試す",
-  "intro_variant": "generic",
-  "ui_variant": "generic"
+  "interaction_model": "editable_package_rows_to_shipping_gates",
+  "primary_layout": "dimension_editor_with_thickness_gates",
+  "result_presentation_style": "shipping_lanes_and_over_limit_tags",
+  "palette_motif": "発送厚みブルー",
+  "main_cta": "梱包前で試す",
+  "intro_variant": "shipping_thickness_gate",
+  "ui_variant": "shipping-gauge"
 }

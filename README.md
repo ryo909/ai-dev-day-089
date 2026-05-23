@@ -1,42 +1,40 @@
-# ai-dev-exp-template
+# Day089 — フリマ発送厚みゲージ
 
-Vite-based single-page template for `ai-dev-day-XXX` repositories.
+> フリマ出品物の厚み・重さ・梱包材から、発送方法の候補と危ない超過を出すツールです。
+>
+> Complexity Tier: medium
+>
+> Selected Components: none
+>
+> Family / Mechanic: flea_market_shipping_fit / lane_fit
+>
+> Input -> Output: dimension_rows -> fit_lanes
+>
+> Audience Promise: 梱包前に送料事故を避けやすくなる。
 
-## Required meta.json fields
+## 使い方
 
-- `day` (e.g. `Day001`)
-- `title`
-- `description`
-- `genre`
-- `theme`
-- `story_summary`
+このツールでできること
+フリマ出品物の厚み・重さ・梱包材から、発送方法の候補と危ない超過を出すツールです。
 
-## Theme behavior
+こんな時に使います
+梱包する前、どの発送方法に収まりそうか見たい時に使います。
 
-- `src/themes.js` defines 8 visual themes.
-- Runtime applies `meta.json.theme` using CSS variables.
-- Day repos should set `theme` with a day-seeded deterministic selector.
+使い方
+1. 項目を入れる
+2. 追加や編集をする
+3. 結果を見る
 
-## Component Packs (tiered build)
+## Story
 
-- Template reads `complexity_tier` / `selected_components` from `meta.json`.
-- `selected_components` is missing: runs as small tier baseline with all packs OFF.
-- Unknown component names are ignored safely.
-- Each pack can be toggled independently and app core flow still works.
+- [制作ストーリー](./STORY.md)
+- Complexity hint: Implement the locked brief with one clear hero interaction and keep the main screenshot readable.
+- Publish hook: 品物、たたみ方、梱包材、厚み余白を入れると、収まる発送レーンと超過しそうな箇所が見える。
 
-Supported packs:
+## Demo
 
-- `reason_panel`
-- `sample_inputs`
-- `local_storage`
-- `comparison_view`
-- `history_panel`
-- `export_suite`
-- `step_ui`
+🌐 [GitHub Pages](https://ryo909.github.io/ai-dev-day-089/)
 
-### Quality/Fallback integration
+---
 
-- Every pack root includes `data-quality-marker="<pack_name>"` for evaluator detection.
-- Runtime manifest is published to `window.__COMPONENT_PACKS__` and script node `#componentPackManifest`.
-- Static fallback manifest exists at `public/component-pack-manifest.json`.
-- Medium/Large can increase visual depth safely by selecting more packs without changing core logic.
+Day089 / #100日開発
